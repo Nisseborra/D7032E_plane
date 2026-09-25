@@ -29,7 +29,7 @@ export const NETWORK_CHOICES: TNetworkChoice[] = [
   {
     key: 2,
     labelKey: "Public",
-    i18n_label: "workspace_projects.network.public.title",
+    i18n_label: "muda",
     description: "workspace_projects.network.public.description", //"Anyone in the workspace except Guests can join",
     iconKey: "Globe2",
   },

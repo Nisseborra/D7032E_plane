@@ -17,7 +17,7 @@ import type { TProject } from "@plane/types";
 // ui
 import { Tooltip } from "@plane/propel/tooltip";
 import { TextArea } from "@plane/ui";
-import { cn, projectIdentifierSanitizer, getTabIndex } from "@plane/utils";
+import { projectIdentifierSanitizer, getTabIndex } from "@plane/utils";
 
 type Props = {
   setValue: UseFormSetValue<TProject>;
@@ -116,7 +116,7 @@ function ProjectCommonAttributes(props: Props) {
                   type="text"
                   value={value}
                   onChange={handleIdentifierChange(onChange)}
-                  placeholder={t("project_id")}
+                  placeholder={t("pro")} //ska hete project_id
                   tabIndex={getIndex("identifier")}
                 />
               </InputGroup>
