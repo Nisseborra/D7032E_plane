@@ -91,27 +91,6 @@ function ProjectAttributes(props: Props) {
           else return <></>;
         }}
       />
-      <Controller
-        //project_team och team är tillfälliga namn som är insatta kan behövas ändra till sennare
-        name="project_team"
-        control={control}
-        render={({ field: { value, onChange } }) => {
-          if (value === undefined || value === null || typeof value === "string")
-            return (
-              <div className="h-7 flex-shrink-0" tabIndex={getIndex("lead")}>
-                <MemberDropdown
-                  value={value ?? null}
-                  onChange={(team) => onChange(team === value ? null : team)}
-                  placeholder={t("team")}
-                  multiple={false}
-                  buttonVariant="border-with-text"
-                  tabIndex={getIndex("team")}
-                />
-              </div>
-            );
-          else return <></>;
-        }}
-      />
     </div>
   );
 }

@@ -116,7 +116,7 @@ function ProjectCommonAttributes(props: Props) {
                   type="text"
                   value={value}
                   onChange={handleIdentifierChange(onChange)}
-                  placeholder={t("pro")} //ska hete project_id
+                  placeholder={t("project_id")} //ska hete project_id
                   tabIndex={getIndex("identifier")}
                 />
               </InputGroup>

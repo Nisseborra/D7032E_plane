@@ -102,7 +102,12 @@ const validateAndDetectFileType = async (file: File): Promise<string> => {
   } catch (_error) {
     console.warn("Error detecting file type from signature:", _error);
   }
-
+  if (file.name.toLowerCase().endsWith(".md")) {
+    return "text/markdown";
+  }
+  if (file.name.toLowerCase().endsWith(".csv")) {
+    return "text/csv";
+  }
   // fallback for unknown files
   return "";
 };
